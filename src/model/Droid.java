@@ -21,13 +21,24 @@ public abstract class  Droid {
     public void attack(Droid enemy) {
         enemy.takeDamage(damage);
         System.out.println(name + " атакує " + enemy.getName() + " на " + damage + " урону!");
+
     }
-    public String getName() {
+    public void ultimate(Droid enemy) {
+        if (!isAlive()) {
+            System.out.println(name + " мертвий і не може використовувати супер атаку!");
+            return;
+        }
+
+        System.out.println("💥 " + name + " використовує супер атаку!");
+        int ultimateDamage = damage * 3;
+        enemy.takeDamage(ultimateDamage);
+        this.takeDamage(damage / 2); // віддача
+        System.out.println(name + " завдає " + ultimateDamage + " шкоди, але сам отримує " + (damage / 2) + ".");
+    }
+        public String getName() {
         return name;
     }
     public int getHealth() {
         return health;
-    }
 
-
-}
+}}

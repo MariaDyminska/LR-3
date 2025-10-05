@@ -39,7 +39,7 @@ public class Menu {
     }
 
     private void createDroid() {
-        System.out.println("Оберіть тип дроїда: 1-Атакуючий, 2-Захисний, 3-Підтримка");
+        System.out.println("Оберіть тип дроїда: 1-Атакуючий, 2-Захисний, 3-Підтримка,4-Вогонь");
         int type = sc.nextInt();
         sc.nextLine();
         System.out.print("Введіть ім'я дроїда: ");
@@ -49,6 +49,7 @@ public class Menu {
             case 1 -> new AttackDroid(name);
             case 2 -> new DefenseDroid(name);
             case 3 -> new SupportDroid(name);
+            case 4 -> new FireDroid(name);
             default -> null;
         };
 

@@ -53,4 +53,3 @@ public class Battle {
         return alive.get(new Random().nextInt(alive.size()));
     }
 }
-
