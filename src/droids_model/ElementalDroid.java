@@ -1,4 +1,4 @@
-package model;
+package droids_model;
 
 public abstract class ElementalDroid extends Droid {
 
@@ -6,6 +6,5 @@ public abstract class ElementalDroid extends Droid {
         super(name, health, damage);
     }
 
-    // Суперсила елемента
     public abstract void useSuper(Droid target);
 }

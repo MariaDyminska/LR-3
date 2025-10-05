@@ -1,4 +1,4 @@
-package model;
+package droids_model;
 
 public class DefenseDroid extends Droid {
     public DefenseDroid(String name) {

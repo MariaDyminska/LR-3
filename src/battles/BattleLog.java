@@ -1,4 +1,4 @@
-package service;
+package battles;
 
 import java.io.*;
 

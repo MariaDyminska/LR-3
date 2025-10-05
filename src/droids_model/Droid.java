@@ -1,4 +1,4 @@
-package model;
+package droids_model;
 
 public abstract class  Droid {
     protected String name;
@@ -20,7 +20,7 @@ public abstract class  Droid {
     }
     public void attack(Droid enemy) {
         enemy.takeDamage(damage);
-        System.out.println(name + " атакує " + enemy.getName() + " на " + damage + " урону!");
+        System.out.println(name + " атакує " + enemy.getName() + " на " + damage + " шкоди!");
 
     }
     public void ultimate(Droid enemy) {
@@ -29,7 +29,7 @@ public abstract class  Droid {
             return;
         }
 
-        System.out.println("💥 " + name + " використовує супер атаку!");
+        System.out.println( name + " використовує супер атаку!");
         int ultimateDamage = damage * 3;
         enemy.takeDamage(ultimateDamage);
         this.takeDamage(damage / 2); // віддача
@@ -40,5 +40,9 @@ public abstract class  Droid {
     }
     public int getHealth() {
         return health;
-
-}}
+    }
+        @Override
+        public String toString() {
+            return name + " (здоров'я: " + health + ", атака: " + damage + ")";
+        }
+}

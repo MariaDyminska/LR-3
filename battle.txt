@@ -1,8 +1,0 @@
-Battle between Nick and dem
-model.AttackDroid@2f2c9b19 | model.AttackDroid@31befd9f
-model.AttackDroid@2f2c9b19 | model.AttackDroid@31befd9f
-model.AttackDroid@2f2c9b19 | model.AttackDroid@31befd9f
-model.AttackDroid@2f2c9b19 | model.AttackDroid@31befd9f
-model.AttackDroid@2f2c9b19 | model.AttackDroid@31befd9f
-model.AttackDroid@2f2c9b19 | model.AttackDroid@31befd9f
-Winner: dem
