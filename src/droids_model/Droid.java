@@ -32,7 +32,7 @@ public abstract class  Droid {
         System.out.println( name + " використовує супер атаку!");
         int ultimateDamage = damage * 3;
         enemy.takeDamage(ultimateDamage);
-        this.takeDamage(damage / 2); // віддача
+        this.takeDamage(damage / 2);
         System.out.println(name + " завдає " + ultimateDamage + " шкоди, але сам отримує " + (damage / 2) + ".");
     }
         public String getName() {

@@ -13,7 +13,7 @@ public class Menu {
     public void start() {
         while (true) {
             System.out.println("""
-                    \n--- МЕНЮ ---
+                   \n--- МЕНЮ ---
                     1. Створити дроїда
                     2. Показати дроїдів
                     3. Бій 1 на 1
@@ -54,7 +54,7 @@ public class Menu {
     private void createDroid() {
         int type;
 
-        System.out.println("Оберіть тип дроїда: 1-Атакуючий, 2-Захисний, 3-Лікар, 4-Вогонь");
+        System.out.println("Оберіть тип дроїда: 1-Атакуючий, 2-Захисник, 3-Лікар, 4-Вогонь");
 
         if (sc.hasNextInt()) {
             type = sc.nextInt();
